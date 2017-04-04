@@ -713,9 +713,9 @@ int main() {
             fprintf(out_new,"ALU Control Signal:%s\n",ALU);
         ALU = "\0";
         fzero = 0;
-       // fstatus = 0;
+       
         n++;
     }
-    //printf("%d\n", registers[5]);
+    
     return 0;
 }
