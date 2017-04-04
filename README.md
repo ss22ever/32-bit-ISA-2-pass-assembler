@@ -7,6 +7,7 @@ THE PROGRAMS
 PROGRAM 1 ::	Find frequency of a given number in an integer array
 PROGRAM 2 ::	Binary Search for an integer
 
+
 PART 1 :: FROM ASSEMBLY CODE TO BINARY
 How to use ?
 =>Extract everything to the single folder 
@@ -28,7 +29,10 @@ i.e.
 
  are read from ‘input_opcode.txt’ by the program and are stored as a HASH TABLE( to reduce time complexity while searching for those opcodes)
 /*We have used 2 pass assembler to  remove forward addressing problem*/
+
 STEP2:: In pass 1, a symbol table of all labels  is generated which can be read in ‘symbol_table.txt’
+
+
 STEP3::In pass 2, the program in again read and symbol table is used to get the corresponding addresses associated with each label. Each instruction is converted to 32 bit machine code
 Addressed associated with registers
 		R0-----> 00000	
@@ -47,6 +51,8 @@ Addressed associated with registers
 		R13----->  01101
 		R14-----> 01110
 		R15-----> 01111
+
+
 /*SPECIAL ARRAY REGISTERS FOR STORING THE SIZE OF THE ARRAY*/
 A0----->  10000
 		A1----->  10001
@@ -61,7 +67,9 @@ Thus we have refrained from storing the machine codes corresponding to opcodes i
 
  
 
- The searching also takes place using this trie. Thus, we have implemented the most optimized scheme of 
+
+
+The searching also takes place using this trie. Thus, we have implemented the most optimized scheme of 
  Using trie, search complexities can be brought to most optimal limit (opcode length). This guarantees search in O(p) time where p is the length of the largest opcode. This scheme is much better than trial and error using masking in both time and space complexities.
  
 The opcodes corresponding to the machine instruction is extracted and executed.
