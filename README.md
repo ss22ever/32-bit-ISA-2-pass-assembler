@@ -2,6 +2,7 @@
 Designed a 32-bit ISA and implemented a two pass assembler using C code to demonstrate assembly language computations.
 
 
+
 MANUAL TO USE THE ISA 
 THE PROGRAMS
 PROGRAM 1 ::	Find frequency of a given number in an integer array
